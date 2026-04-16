@@ -38,7 +38,7 @@ Hr = {
     'Expect': "100-continue",
     'X-Unity-Version': "2018.4.11f1",
     'X-GA': "v1 1",
-    'ReleaseVersion': "OB52"}
+    'ReleaseVersion': "OB53"}
 
 # ---- Random Colores ----
 def get_random_color():
@@ -674,10 +674,5 @@ async def StarTinG():
             print(f"ErroR TcP - {e} => ResTarTinG ...")
 
 
-import os
-
-if __name__ == "__main__":
-    # Render থেকে PORT ভেরিয়েবলটি নিয়ে সেটি ব্যবহার করবে, না থাকলে ডিফল্ট ১০০০
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host='0.0.0.0', port=port)
-
+if __name__ == '__main__':
+    asyncio.run(StarTinG())
